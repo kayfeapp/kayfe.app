@@ -1,0 +1,9 @@
+Beyler kafanızda sistemin daha çok oturması için genel bilgileri anlatıyorum
+
+Bizim app’imiz ile kafeler müşterilerine royalty system sunabilecekler + yeni müşteri potansiyeli elde edecekler (growth şemasını paylaşacağım) + kullanıcıların datalarını görebilecekler en çok hangi ürün satılıyor en çok gelen kişi kim vb vb. 
+
+Akış genel olarak şu şekilde olacak kullanıcı gelecek uygulamadan bulunduğu kafeden QR üretecek QR çıkınca admin appinden mekan sahibi veya garson QR okutma açacak QR okunacak
+
+Genel anlamda benim yapacaklarım ise kafelerin bağlantıları marketing growth stratejisi yazılım harici bütün her şey bende siz dev team olarak ürünü çıkartıp vermeniz yeterli
+
+Son olarak benim kafamda çizdiğim roadmap şu şekilde burası bizim pasif kazanç sağlayabileceğimiz bir appimiz olsun pasif kazançtan kastımız ne misal ürünü aylık 500 tl’ye satıyoruz ankarada 1000 tane kafemiz olsun burası bize gelecek girişimlerimizdeki harçlıklarımız olsun  aklımda b2b saas olarak bazı fikirler var türkiyede henüz yapılmamış yapılmış ama ayyuka çıkmamış diyeyim whatsapp crm service gibi bunları yaparken cebimizde harçlık olsun diye bu app’i yapıyoruz tabi ki inanıyoruz bu appe ankarada 300-500 kafeyi gördük mü bu appi satın almak için sıraya girecekler o zaman milyon dolarlar konuşulur
