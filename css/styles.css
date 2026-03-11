@@ -648,14 +648,15 @@ h3 {
 
 @media (max-width: 760px) {
     html {
-        scroll-padding-top: 7.25rem;
+        scroll-padding-top: 0;
     }
 
     .site-header {
-        position: sticky;
-        top: 0;
-        background: rgba(247, 239, 229, 0.94);
-        backdrop-filter: blur(14px);
+        position: relative;
+        top: auto;
+        background: transparent;
+        backdrop-filter: none;
+        border-bottom: 0;
     }
 
     .nav-wrap {
@@ -716,7 +717,7 @@ h3 {
     .stats-strip,
     .section,
     .site-footer {
-        scroll-margin-top: 7.25rem;
+        scroll-margin-top: 0;
     }
 
     .site-footer {
