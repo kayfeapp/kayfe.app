@@ -26,6 +26,7 @@
 
 html {
     scroll-behavior: smooth;
+    scroll-padding-top: 6.5rem;
 }
 
 body {
@@ -337,6 +338,13 @@ h3 {
     padding: 4.25rem 0;
 }
 
+.hero,
+.stats-strip,
+.section,
+.site-footer {
+    scroll-margin-top: 6.5rem;
+}
+
 .section-heading {
     max-width: 760px;
     margin-bottom: 2rem;
@@ -639,6 +647,10 @@ h3 {
 }
 
 @media (max-width: 760px) {
+    html {
+        scroll-padding-top: 10rem;
+    }
+
     .nav-wrap {
         flex-direction: column;
         align-items: stretch;
@@ -670,6 +682,13 @@ h3 {
 
     .section {
         padding: 3.2rem 0;
+    }
+
+    .hero,
+    .stats-strip,
+    .section,
+    .site-footer {
+        scroll-margin-top: 10rem;
     }
 
     .site-footer {
