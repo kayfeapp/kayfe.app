@@ -280,16 +280,16 @@ h3 {
 }
 
 .hero-emblem {
-    width: 12rem;
-    height: 12rem;
+    width: 13.5rem;
+    height: 13.5rem;
     display: grid;
     place-items: center;
     margin: 0 auto 1.5rem;
 }
 
 .hero-emblem img {
-    width: 100%;
-    height: 100%;
+    width: 130%;
+    height: 130%;
     object-fit: contain;
     filter: drop-shadow(0 12px 22px rgba(0, 0, 0, 0.2));
 }
@@ -746,8 +746,8 @@ h3 {
     }
 
     .hero-emblem {
-        width: 8.4rem;
-        height: 8.4rem;
+        width: 9rem;
+        height: 9rem;
         margin-bottom: 1rem;
     }
 
