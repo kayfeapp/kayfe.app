@@ -97,14 +97,16 @@ textarea {
 }
 
 .brand-mark {
-    width: 2.4rem;
-    height: 2.4rem;
+    width: 2.6rem;
+    height: 2.6rem;
     display: grid;
     place-items: center;
-    border-radius: 50%;
-    background: linear-gradient(135deg, var(--primary), var(--gold));
-    color: #fff;
-    box-shadow: 0 10px 24px rgba(159, 79, 45, 0.28);
+}
+
+.brand-mark img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
 }
 
 .brand-text {
@@ -269,12 +271,27 @@ h3 {
 .hero-card {
     position: relative;
     width: min(420px, 100%);
-    padding: 1.5rem;
+    padding: 1.6rem;
     border-radius: var(--radius-lg);
     background: rgba(44, 27, 20, 0.9);
     color: #fff;
     box-shadow: var(--shadow);
     z-index: 3;
+}
+
+.hero-emblem {
+    width: 12rem;
+    height: 12rem;
+    display: grid;
+    place-items: center;
+    margin: 0 auto 1.5rem;
+}
+
+.hero-emblem img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    filter: drop-shadow(0 12px 22px rgba(0, 0, 0, 0.2));
 }
 
 .card-kicker,
@@ -305,7 +322,6 @@ h3 {
 .qr-card,
 .feature-card,
 .step-card,
-.gallery-card,
 .business-panel,
 .application-form,
 .faq-list details,
@@ -358,7 +374,6 @@ h3 {
 
 .download-grid,
 .feature-grid,
-.gallery-grid,
 .footer-grid {
     display: grid;
     gap: 1.2rem;
@@ -393,23 +408,42 @@ h3 {
     line-height: 1;
 }
 
-.qr-placeholder {
-    aspect-ratio: 1;
-    width: min(220px, 100%);
-    justify-self: center;
-    border-radius: 1rem;
-    background:
-        linear-gradient(90deg, #111 10px, transparent 10px) 0 0 / 30px 30px,
-        linear-gradient(#111 10px, transparent 10px) 0 0 / 30px 30px,
-        linear-gradient(90deg, transparent 20px, #111 20px) 0 0 / 45px 45px,
-        linear-gradient(transparent 20px, #111 20px) 0 0 / 45px 45px,
-        #fff;
-    border: 12px solid #fff;
-    box-shadow: inset 0 0 0 1px rgba(17, 17, 17, 0.08);
+.store-cta {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.8rem;
+    width: 100%;
+    min-height: 4.8rem;
+    padding: 1rem 1.25rem;
+    border-radius: 1.35rem;
+    font-family: "Outfit", sans-serif;
+    font-size: 1.05rem;
+    font-weight: 700;
+    text-align: center;
+    transition: transform 180ms ease, box-shadow 180ms ease, border-color 180ms ease;
 }
 
-.qr-placeholder.alt {
-    filter: hue-rotate(28deg);
+.store-cta:hover {
+    transform: translateY(-2px);
+}
+
+.store-cta i {
+    font-size: 1.2rem;
+    line-height: 1;
+}
+
+.store-cta-apple {
+    background: linear-gradient(135deg, #2d201b, #4a332a);
+    color: #fffaf4;
+    box-shadow: 0 16px 34px rgba(44, 27, 20, 0.22);
+}
+
+.store-cta-google {
+    background: linear-gradient(135deg, #f6eee3, #ead9c4);
+    color: var(--text);
+    border: 1px solid rgba(63, 38, 26, 0.12);
+    box-shadow: 0 16px 34px rgba(124, 86, 48, 0.12);
 }
 
 .qr-note {
@@ -491,31 +525,6 @@ h3 {
     width: 2.25rem;
     height: 2.25rem;
     padding: 0;
-}
-
-.gallery-grid {
-    grid-template-columns: repeat(3, 1fr);
-    align-items: stretch;
-    gap: 1.5rem;
-}
-
-.gallery-card {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-    border-radius: var(--radius-xl);
-    padding: 1rem;
-    aspect-ratio: 1.06 / 1;
-    background: rgba(255, 250, 244, 0.84);;
-}
-
-.gallery-card img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-    border-radius: calc(var(--radius-xl) - 10px);
-    display: block;
 }
 
 .business-grid,
@@ -680,14 +689,6 @@ h3 {
     .stats-grid {
         grid-template-columns: 1fr;
     }
-
-    .gallery-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .gallery-card {
-        aspect-ratio: 1.06 / 1;
-    }
 }
 
 @media (max-width: 760px) {
@@ -744,12 +745,14 @@ h3 {
         height: 2.1rem;
     }
 
-    .hero {
-        padding-top: 3rem;
+    .hero-emblem {
+        width: 8.4rem;
+        height: 8.4rem;
+        margin-bottom: 1rem;
     }
 
-    .gallery-grid {
-        grid-template-columns: 1fr;
+    .hero {
+        padding-top: 3rem;
     }
 
     .business-stack {
@@ -805,12 +808,4 @@ h3 {
         padding-left: 4.5rem;
     }
 
-    .gallery-card {
-        aspect-ratio: auto;
-        padding: 0.75rem;
-    }
-
-    .gallery-card img {
-        height: auto;
-    }
 }
