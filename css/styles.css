@@ -279,6 +279,15 @@ h3 {
     z-index: 3;
 }
 
+.hero-card h2 {
+    font-size: clamp(2.4rem, 5vw, 4.1rem);
+    line-height: 0.96;
+}
+
+.hero-card p {
+    margin-bottom: 0;
+}
+
 .hero-emblem {
     width: 13.5rem;
     height: 13.5rem;
@@ -702,22 +711,24 @@ h3 {
         background: linear-gradient(180deg, rgba(247, 239, 229, 0.96), rgba(241, 231, 221, 0.92));
         backdrop-filter: blur(10px);
         border-bottom: 1px solid rgba(63, 38, 26, 0.08);
+        width: 100%;
     }
 
     .nav-wrap {
         flex-direction: column;
-        align-items: stretch;
+        align-items: center;
         gap: 0.75rem;
         padding: 0.75rem 0;
-        background: rgba(255, 250, 244, 0.86);
-        border: 1px solid rgba(63, 38, 26, 0.1);
-        border-radius: 0 0 1.2rem 1.2rem;
-        box-shadow: 0 12px 24px rgba(52, 28, 17, 0.08);
-        padding-inline: 0.9rem;
+        width: 100%;
+        background: transparent;
+        border: 0;
+        border-radius: 0;
+        box-shadow: none;
+        padding-inline: 0;
     }
 
     .site-nav {
-        justify-content: flex-start;
+        justify-content: center;
         flex-wrap: nowrap;
         overflow-x: auto;
         padding-bottom: 0.1rem;
@@ -734,6 +745,7 @@ h3 {
         flex: 0 0 auto;
         white-space: nowrap;
         font-size: 0.95rem;
+        text-align: center;
     }
 
     .nav-cta {
@@ -755,6 +767,28 @@ h3 {
         padding-top: 3rem;
     }
 
+    .hero-copy,
+    .hero-card {
+        text-align: center;
+    }
+
+    .hero-actions {
+        flex-direction: column;
+    }
+
+    .hero-actions .button {
+        width: 100%;
+    }
+
+    .hero-points {
+        gap: 0.9rem;
+    }
+
+    .hero-points li {
+        align-items: flex-start;
+        text-align: left;
+    }
+
     .business-stack {
         gap: 0.75rem;
     }
@@ -763,6 +797,34 @@ h3 {
         position: relative;
         width: 100%;
         margin-bottom: 1rem;
+        padding: 1.5rem;
+    }
+
+    .hero-card h2 {
+        font-size: clamp(2.2rem, 8vw, 3.2rem);
+    }
+
+    .download-grid {
+        gap: 1rem;
+    }
+
+    .store-cta {
+        min-height: 4.3rem;
+        padding: 0.95rem 1rem;
+        font-size: 1rem;
+    }
+
+    .application-copy,
+    .business-copy,
+    .section-heading {
+        margin-bottom: 1.5rem;
+    }
+
+    .application-form,
+    .qr-card,
+    .feature-card,
+    .step-card {
+        box-shadow: 0 16px 34px rgba(52, 28, 17, 0.1);
     }
 
     .section {
@@ -787,11 +849,38 @@ h3 {
     }
 
     h1 {
-        font-size: 2.5rem;
+        font-size: 2.18rem;
+        line-height: 0.98;
     }
 
     h2 {
         font-size: 1.85rem;
+    }
+
+    .eyebrow {
+        font-size: 0.74rem;
+        letter-spacing: 0.06em;
+    }
+
+    .hero {
+        padding: 2.35rem 0 2.2rem;
+    }
+
+    .hero-grid {
+        gap: 1.4rem;
+    }
+
+    .hero-text,
+    .section-heading p,
+    .business-copy p,
+    .application-copy p,
+    .footer-grid p,
+    .qr-card p,
+    .feature-card p,
+    .step-card p,
+    .stats-grid p {
+        font-size: 0.97rem;
+        line-height: 1.62;
     }
 
     .stats-grid article,
@@ -806,6 +895,50 @@ h3 {
 
     .step-card {
         padding-left: 4.5rem;
+    }
+
+    .step-number {
+        left: 1.15rem;
+        top: 1.2rem;
+    }
+
+    .hero-card {
+        padding: 1.3rem;
+        border-radius: 1.4rem;
+    }
+
+    .hero-card h2 {
+        font-size: 2rem;
+    }
+
+    .hero-emblem {
+        width: 7.4rem;
+        height: 7.4rem;
+        margin-bottom: 0.85rem;
+    }
+
+    .hero-emblem img {
+        width: 118%;
+        height: 118%;
+    }
+
+    .button {
+        min-height: 3rem;
+        padding: 0.8rem 1.1rem;
+    }
+
+    .store-cta {
+        min-height: 4rem;
+        border-radius: 1.15rem;
+        font-size: 0.98rem;
+    }
+
+    .store-cta span {
+        line-height: 1.2;
+    }
+
+    .site-footer {
+        padding: 1.5rem 0;
     }
 
 }
