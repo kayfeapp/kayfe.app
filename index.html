@@ -1138,27 +1138,38 @@
     .hero-sub { font-size: 16px; }
     .hero-preview { margin-top: 54px; }
 
-    .hp-stage { aspect-ratio: 3 / 4; border-radius: 18px; }
-    .hp-hero-core { width: 218px; height: 218px; left: 50%; top: 55%; opacity: 0.86; }
-    .hp-logo-orb { width: 78px; height: 78px; }
+    .hp-stage {
+      height: 520px;
+      aspect-ratio: auto;
+      border-radius: 18px;
+      background:
+        radial-gradient(ellipse at 50% 18%, rgba(255,240,210,0.34), transparent 46%),
+        radial-gradient(ellipse at 50% 100%, rgba(80,45,20,0.28), transparent 58%),
+        linear-gradient(160deg, #E7C99E 0%, #B98755 58%, #765337 100%);
+    }
+    .hp-decor,
+    .hp-ring,
+    .hp-hero-core {
+      display: none;
+    }
     .hp-phone {
-      width: 158px; left: 50%; top: 7%;
+      width: 232px; left: 50%; top: 50%;
       animation: phoneRiseMobile 1.1s cubic-bezier(0.22, 1, 0.36, 1) 0.5s both,
                  phoneFloatMobile 6.5s ease-in-out 1.6s infinite;
     }
-    .hp-phone-frame { border-radius: 32px; padding: 7px; }
-    .hp-phone-screen { min-height: 312px; border-radius: 25px; }
-    .hp-phone-notch { width: 58px; height: 14px; }
+    .hp-phone-frame { border-radius: 38px; padding: 8px; }
+    .hp-phone-screen { min-height: 456px; border-radius: 30px; }
+    .hp-phone-notch { width: 70px; height: 17px; }
     .hp-receipt { display: none; }
     .hp-notif { display: none; }
 
     @keyframes phoneRiseMobile {
-      from { opacity: 0; transform: translateX(-60%) rotate(-4deg) scale(0.92); }
-      to   { opacity: 1; transform: translateX(-60%) rotate(-8deg) scale(1); }
+      from { opacity: 0; transform: translate(-50%, -42%) rotate(-2deg) scale(0.94); }
+      to   { opacity: 1; transform: translate(-50%, -50%) rotate(-3deg) scale(1); }
     }
     @keyframes phoneFloatMobile {
-      0%, 100% { transform: translateX(-60%) rotate(-8deg); }
-      50%      { transform: translateX(-60%) translateY(-8px) rotate(-7deg); }
+      0%, 100% { transform: translate(-50%, -50%) rotate(-3deg); }
+      50%      { transform: translate(-50%, calc(-50% - 8px)) rotate(-2deg); }
     }
 
     .bento { grid-template-columns: 1fr; }
@@ -1192,9 +1203,9 @@
     .section-head h2,
     .b2b-hero h2,
     .partner-cta h2 { font-size: 32px; }
-    .hp-phone { width: 150px; }
-    .hp-phone-screen { min-height: 296px; }
-    .hp-hero-core { width: 200px; height: 200px; }
+    .hp-stage { height: 492px; }
+    .hp-phone { width: 214px; }
+    .hp-phone-screen { min-height: 420px; }
     footer { grid-template-columns: 1fr; }
   }
 
